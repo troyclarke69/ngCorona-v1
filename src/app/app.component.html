@@ -1,0 +1,50 @@
+<app-navbar id="navbar" 
+    class="navbar navbar-dark bg-dark">
+</app-navbar> 
+
+<div class="container-fluid">
+  <div class="row" id="mainContent">
+
+    <app-sidebar id="sideBar" 
+        class="col-sm-3 col-md-2 d-none d-sm-block sidebar">
+    </app-sidebar>
+
+    <div class="col-sm-9 ml-sm-auto col-md-10 pt-3" id="dashboard">
+      <router-outlet></router-outlet>
+    </div>
+
+    <!-- <div class="" id="">
+      <app-line-chart></app-line-chart>
+    </div> -->
+
+  </div>
+</div>
+
+
+<!-- <h1>{{title}}</h1> -->
+
+<!-- <div class="container-fluid">
+
+  <div class="row" id="">
+    <nav class="col-sm-12 bg-dark navbar">
+        <app-navbar></app-navbar>
+    </nav>
+  </div>
+
+  <div class="row" id="mainContent">
+
+    <nav class="col-sm-3 col-md-1 d-none d-sm-block"> -->
+      <!-- <a routerLink="/dashboard">Dashboard</a>
+      <a routerLink="/heroes">Heroes</a> -->
+      <!-- <a routerLink="/corona-totals">Covid</a>
+      <a routerLink="/books">Books</a> -->
+      <!-- <app-sidebar></app-sidebar>
+    </nav>
+
+    <div class="col-sm-9 ml-sm-auto col-md-10 pt-3" id="dashboard">
+      <router-outlet></router-outlet>
+      <app-messages></app-messages>
+    </div>
+
+  </div>
+</div> -->
