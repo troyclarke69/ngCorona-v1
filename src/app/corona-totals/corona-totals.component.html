@@ -1,0 +1,59 @@
+<div class="section-container">
+    <h2>
+      Coronavirus - Stats by Country
+    </h2>
+
+    <table class="table table-inverse 
+      table-hover header-fixed">
+      <thead class="thead-dark">
+        <tr>
+          <th>Country</th>
+          <th>Cases</th>
+          <th>Today's Cases</th>
+          <th>Deaths</th>
+          <th>Today's Deaths</th>
+          <th>Recovered</th>
+          <th>Active</th>
+          <th>Critical</th>
+          <th>Cases/M</th>
+          <th>Deaths/M</th>
+          <th>Total Tests</th>
+          <th>Tests/M</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let s of stats">
+
+          <td><img src="{{ s.countryInfo.flag }}" width="15%" height="15%"> &nbsp;             
+            <a routerLink="/google-chart/line-chart/{{ s.country }}">
+              {{ s.country }}
+            </a>
+          </td>
+          <td>{{ s.cases }}</td>
+          <td>{{ s.todayCases }}</td>
+          <td>{{ s.deaths }}</td>
+          <td>{{ s.todayDeaths }}</td>
+          <td>{{ s.recovered }}</td>
+          <td>{{ s.active }}</td>
+          <td>{{ s.critical }}</td>
+          <td>{{ s.casesPerOneMillion }}</td>
+          <td>{{ s.deathsPerOneMillion }}</td>
+          <td>{{ s.tests }}</td>
+          <td>{{ s.testsPerOneMillion }}</td>
+         
+        </tr>
+                 
+      </tbody>
+    </table>
+  
+    <!-- <app-pagination
+    (goPage)="goToPage($event)"
+    (goPrev)="goToPrevious()"
+    (goNext)="goToNext()"
+    [page]="page"
+    [perPage]="limit"
+    [count]="total">
+    </app-pagination> -->
+
+  </div>
