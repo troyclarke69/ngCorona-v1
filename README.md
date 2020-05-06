@@ -14,7 +14,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 # Add Google charts reference to project:
     a. Add line to index.html: <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    b. OR download loader.js to /assets folder and add path to <scripts> section in angular.json file.
+    OR b. download loader.js to /assets folder and add path to <scripts> section in angular.json file.
 
 # Create Google Charts Service module:
     ng g module google-chart
