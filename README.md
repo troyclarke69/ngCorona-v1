@@ -1,4 +1,11 @@
-# AngularSalesDashboard
+# ngCorona
+corona-now.netlify.app
+
+API calls:
+https://corona.lmao.ninja/...
+https://newsapi.org/...
+https://troyclarke69.pythonanywhere.com/api/download >>
+(google.chart.service pulls daily #s from https://pomber.github.io/covid19/timeseries.json)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
 
@@ -7,18 +14,18 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 # Add Google charts reference to project:
     a. Add line to index.html: <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    b. OR download loader.js (copy js text from link above, I guess?!) to /assets folder and add path to <scripts> section in angular.json file.
+    b. OR download loader.js to /assets folder and add path to <scripts> section in angular.json file.
 
 # Create Google Charts Service module:
     ng g module google-chart
 
-# Create another module inside google-chart folder (creates another subfolder):
+# Create another module inside google-chart folder:
     ng g module google-chart/service
 
 # Create service inside service module/folder
     ng g service google-chart/service/google-chart
 
-    * Note: this file - google-chart.service.ts contains the var 'google' - refers to google charts lib.
+    * Note: this file - google-chart.service.ts contains var 'google' : google charts lib.
 
 # Ensure that the service module is imported in google-chart.module.ts (not mentioned in article)
     ...
@@ -27,7 +34,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
         ServiceModule 
     ]
     ...
-
     * Note: 'import { ServiceModule } from './service/service.module';'
 
 # Create Line chart component inside google-chart folder
@@ -52,7 +58,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
     imports: [
         BrowserModule,
         AppRoutingModule,
-        GoogleChartModule
+        # GoogleChartModule
     ],
     ...
 
