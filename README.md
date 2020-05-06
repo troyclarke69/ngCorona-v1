@@ -9,7 +9,7 @@ https://troyclarke69.pythonanywhere.com/api/download >>
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
 
-# GoogleChartModule Setup/Developmen:
+# GoogleChartModule Setup/Development Notes:
 # Reference: https://blog.jscrambler.com/creating-a-sales-dashboard-using-angular-and-google-charts/
 
 # Add Google charts reference to project:
